@@ -1,0 +1,33 @@
+.container {
+  color: var(--color-text);
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.currency-input {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+
+  p {
+    color: var(--color-text);
+    font-size: large;
+    font-weight: 600;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}

@@ -1,0 +1,14 @@
+input {
+  width: 20rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: var(--color-input);
+  color: var(--color-text);
+
+  &:active {
+    border: none;
+    outline: none;
+  }
+}

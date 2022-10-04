@@ -1,0 +1,36 @@
+@use "./styles/colors" as *;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-body);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html[data-theme="light"] {
+  --color-body: #{$white};
+  --color-switch-container: #{$white};
+  --color-text: #{$gray};
+  --color-switch-slider: #{$gray};
+  --color-dropdown: #{$light-gray};
+  --color-border: #{$gray};
+  --color-input: #{$light-gray};
+}
+
+html[data-theme="dark"] {
+  --color-body: #{$gray};
+  --color-switch-container: #{$gray};
+  --color-text: #{$white};
+  --color-switch-slider: #{$white};
+  --color-dropdown: #{$dark-blue};
+  --color-border: #{$white};
+  --color-input: #{$dark-blue};
+}

@@ -1,0 +1,38 @@
+.checkbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+
+  &:checked + label:after {
+    left: calc(100% - 0.25rem);
+    transform: translateX(-100%);
+  }
+}
+
+.slider {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 4rem;
+  height: 2rem;
+  background: var(--color-switch-container);
+  border: 2px solid var(--color-switch-slider);
+  display: block;
+  border-radius: 50px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--color-switch-slider);
+    border-radius: 46px;
+    transition: 0.3s;
+  }
+
+  &:active:after {
+    width: 2rem;
+  }
+}

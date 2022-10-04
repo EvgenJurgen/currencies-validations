@@ -1,0 +1,20 @@
+.container {
+  color: var(--color-text);
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.countries-list {
+  font-size: larger;
+  padding: 0 1.5rem;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
